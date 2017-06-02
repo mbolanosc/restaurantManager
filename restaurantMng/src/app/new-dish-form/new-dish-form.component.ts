@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgModule } from models
+import { NgModule } from models;
+
 @Component({
   selector: 'app-new-dish-form',
   templateUrl: './new-dish-form.component.html',

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 export class ModelsModule {
@@ -18,3 +18,4 @@ export class ModelsModule {
   getDescription() { return this.description; }
   getCategotyName() { return this.categotyName; }
 }
+*/
