@@ -17,5 +17,8 @@ export class NewDishFormComponent implements OnInit {
 
   ngOnInit() {
   }
+  addFood(name,price,desccription,category){
+    console.log(name,price,desccription,category);
+  }
 
 }

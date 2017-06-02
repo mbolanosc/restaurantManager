@@ -1,22 +1,21 @@
 <div class="row">
   <div class="col-md-8">
-    <form>
       <div class="form-group">
-        <label for="inputName" class="col-sm-2 control-label">Name:</label>
+        <label class="col-sm-2 control-label">Name:</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputName" placeholder="Name">
+          <input [(ngModel)]="inputName" type="text" class="form-control" id="inputName" placeholder="Name">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputPrice" class="col-sm-2 control-label">Price:</label>
+        <label for="inputPrice" class="col-sm-2 control-label" >Price:</label>
         <div class="col-sm-10">
-          <input type="number" class="form-control" id="inputPrice" placeholder="Price">
+          <input [(ngModel)]="inputPrice" type="number" class="form-control" id="inputPrice" placeholder="Price">
         </div>
       </div>
       <div class="form-group">
-        <label for="textareaDescrip" class="col-sm-2 control-label">Description:</label>
+        <label for="textareaDescrip" class="col-sm-2 control-label" >Description:</label>
         <div class="col-sm-10">
-          <textarea class="form-control" name="textareaDescrip" rows="5" cols="29"></textarea>
+          <textarea class="form-control" name="textareaDescrip" rows="5" cols="29" [(ngModel)]="textareaDescrip"></textarea>
         </div>
       </div>
       <div class="form-group">
@@ -32,9 +31,8 @@
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Add</button>
+          <button type="submit" class="btn btn-default" (click)=addFood(inputName,inputPrice,textareaDescrip)>Add</button>
         </div>
       </div>
-    </form>
   </div>
 </div>
