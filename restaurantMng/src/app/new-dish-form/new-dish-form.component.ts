@@ -11,7 +11,7 @@ export class NewDishFormComponent implements OnInit {
   inputName = "";
   inputPrice = "";
   textareaDescrip = "";
-  categotyName = "";
+  categoryinput = "";
 
   constructor() { }
   @Input() food;
@@ -19,8 +19,8 @@ export class NewDishFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  addFood(inputName, inputPrice, textareaDescrip, category) {
-    console.log(inputName, inputPrice, textareaDescrip, category);
+  addFood(inputName, inputPrice, textareaDescrip, categoryinput) {
+    console.log(inputName, inputPrice, textareaDescrip, categoryinput);
   }
 
 }
