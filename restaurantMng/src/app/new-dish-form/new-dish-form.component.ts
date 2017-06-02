@@ -14,6 +14,8 @@ export class NewDishFormComponent implements OnInit {
   categotyName = "";
 
   constructor() { }
+  @Input() food;
+
 
   ngOnInit() {
   }
