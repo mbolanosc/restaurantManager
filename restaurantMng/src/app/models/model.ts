@@ -16,5 +16,10 @@ export class Model {
   getDescription() { return this.description; }
   getCategotyName() { return this.categotyName; }
 
+  setName(value) { this.name = value }
+  setPrice(value) { this.price = value }
+  setDescription(value) { this.description = value }
+  setCategotyName(value) { this.categotyName = value }
+
 }
 
